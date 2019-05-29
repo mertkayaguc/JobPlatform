@@ -1,0 +1,109 @@
+﻿@model JobPlatform.Models.FeedViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser2> SignInManager
+@inject UserManager<IdentityUser2> UserManager
+@{ var currentUser = UserManager.GetUserAsync(User).Result;
+}
+
+<div class="wrapper">
+
+    @*<section class="cover-sec">
+        <img src="/images/cover-img.jpg" alt="">
+    </section>*@
+
+    <div class="main-section">
+        <div class="container">
+            <div class="main-section-data">
+                <div class="row">
+                    <div class="col-lg-3">
+                        @*<div class="main-left-sidebar">
+                                <div class="user_profile">
+                                    <div class="user-pro-img">
+                                        <img src="@Model.Profile.PhotoUrl" height="180" width="180" />
+                                    </div><!--user-pro-img end-->
+                                    <div class="user_pro_status">
+                                        <ul class="flw-status">
+                                            <li>
+                                                <h4>Following</h4>
+                                                <span>@Model.Profile.Following</span>
+                                            </li>
+                                            <li>
+                                                <h4>Followers</h4>
+                                                <span>@Model.Profile.Followers</span>
+                                            </li>
+                                        </ul>
+                                    </div><!--user_pro_status end-->
+                                    <ul class="social_links">
+                                        <li><b style="font-weight: 900;">About:</b><span> @Model.Profile.About</span></li>
+                                        <li><b style="font-weight: 900;">Skills:</b><span> @Model.Profile.Skills</span></li>
+                                        <li><b style="font-weight: 900;">Work:</b><span> @Model.Profile.WorkInfo</span></li>
+                                        <li><b style="font-weight: 900;">Education:</b><span> @Model.Profile.Education</span></li>
+                                    </ul>
+                                </div><!--user_profile end-->
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Suggestions</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div class="suggestions-list">
+                                        @foreach (var item in @Model.Users)
+                                        {
+                                            <div class="suggestion-usd">
+                                                <img src="@item.PhotoUrl" alt="" style="width:35px; height:35px;">
+                                                <div class="sgt-text">
+                                                    <h4><a asp-controller="Profile" asp-action="Index" asp-route-id="@item.Id" class="com">@item.UserName</a></h4>
+                                                    <span></span>
+                                                </div>
+                                                <span><a asp-action="FollowUser" asp-controller="Home" asp-route-id="@item.Id"><i class="la la-plus"></i></a></span>
+                                            </div>
+                                        }
+                                    </div><!--suggestions-list end-->
+                                </div><!--suggestions end-->
+                            </div><!--main-left-sidebar end-->*@
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="main-ws-sec">
+                            @*<div class="user-tab-sec">
+                                    <h3>@Model.Profile.Name @Model.Profile.Surname</h3>
+                                    <div class="star-descp">
+
+                                    </div>
+                                </div>*@
+                            <div class="product-feed-tab current" id="feed-dd">
+                                <div class="posts-section">
+
+                                    @foreach (var item in Model.Jobs)
+                                    {
+                                        <div class="post-bar">
+                                            <div class="post_topbar">
+                                                <div class="usy-dt">
+                                                    <img src="@item.PhotoUrl" alt="" height="50" width="50">
+                                                    <div class="usy-name">
+                                                        <h3>@item.UserName</h3>
+                                                        <span>@item.Date</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="job_descp">
+                                                <h3>@item.Title</h3>
+                                                <p>@item.Text</p>
+                                            </div>
+                                            <div class="job-status-bar">
+                                                <ul class="like-com">
+                                                    @*<li><a asp-action="LikePost" asp-route-id="@item.Id" class="com">Like @item.LikeCount</a></li>*@
+                                                    <li><a asp-action="JobApplication" asp-route-id="@item.Id" asp-controller="Job" class="com">Job Application</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--post-bar end-->
+                                    }
+
+                                </div><!--main-ws-sec end-->
+                            </div>
+                        </div>
+                    </div><!-- main-section-data end-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

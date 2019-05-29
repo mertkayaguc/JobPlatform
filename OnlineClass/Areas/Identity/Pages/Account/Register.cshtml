@@ -1,0 +1,133 @@
+﻿@page
+@model RegisterModel
+@*<div class="row">
+        <div class="col-md-8">
+            <section id="loginForm">
+                <form asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data" class="form-horizontal">
+                    <h4>Create a new account.</h4>
+                    <hr />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.Name" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.Name" class="form-control" />
+                            <span asp-validation-for="Input.Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Surname" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.Surname" class="form-control" />
+                            <span asp-validation-for="Input.Surname" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.UserName" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.UserName" class="form-control" />
+                            <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.Email" class="form-control" />
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.Password" class="form-control" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Input.ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Upload one or more files using this form:</p>
+                        <div class="col-md-10">
+                            <input type="file" name="AvatarImage" multiple>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Register</button>
+                </form>
+            </section>
+        </div>
+    </div>*@
+
+<section class="profile-account-setting">
+    <div class="container">
+        <div class="account-tabs-setting">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-acc" role="tabpanel" aria-labelledby="nav-acc-tab">
+                    <div class="acc-setting">
+                        <h3>Login</h3>
+                        <form asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.Name"></label></h4>
+                                <input asp-for="Input.Name" class="form-control" />
+                                <span asp-validation-for="Input.Name" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.Surname"></label></h4>
+                                <input asp-for="Input.Surname" class="form-control" />
+                                <span asp-validation-for="Input.Surname" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.UserName"></label></h4>
+                                <input asp-for="Input.UserName" class="form-control" />
+                                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.Email"></label></h4>
+                                <input asp-for="Input.Email" class="form-control" />
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.Password"></label></h4>
+                                <input asp-for="Input.Password" class="form-control" />
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.ConfirmPassword"></label></h4>
+                                <input asp-for="Input.ConfirmPassword" class="form-control" />
+                                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <h4><label asp-for="Input.Role"></label></h4>
+                                @{ var Countries = new List<SelectListItem> {
+                                                                                       new SelectListItem { Value = "User", Text = "User" },
+                                                                                       new SelectListItem { Value = "Company", Text = "Company" }
+                                                                                   };}
+                                <select asp-for="Input.Role" asp-items="@Countries" style="width: 100%; color: #b2b2b2; font-size: 14px; border: 1px solid #e5e5e5; margin-bottom: 20px; font-weight: 500; height: 40px; padding: 0 10px;"></select>
+                                <span asp-validation-for="Input.Role" class="text-danger"></span>
+                            </div>
+                            <div class="notbar">
+                                <p>Upload one or more files using this form:</p>
+                                <div class="col-md-10">
+                                    <input type="file" name="AvatarImage" multiple>
+                                </div>
+                            </div>
+                            <div class="save-stngs">
+                                <button type="submit" class="btn btn-default">Register</button>
+                            </div>
+                        </form>
+                    </div><!--acc-setting end-->
+                </div>
+            </div>
+        </div><!--account-tabs-setting end-->
+    </div>
+</section>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

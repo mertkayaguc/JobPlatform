@@ -1,0 +1,65 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+}
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-acc" role="tabpanel" aria-labelledby="nav-acc-tab">
+        <div class="acc-setting">
+            <h3>Account Setting</h3>
+            <form method="post" enctype="multipart/form-data">
+                <div class="notbar">
+                    <h4><label asp-for="Username"></label></h4>
+                    <input asp-for="Username" class="form-control" disabled />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Name"></label></h4>
+                    <input asp-for="Input.Name" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Surname"></label></h4>
+                    <input asp-for="Input.Surname" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Email"></label></h4>
+                    <input asp-for="Input.Email" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Email"></label></h4>
+                    <input asp-for="Input.Email" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.About"></label></h4>
+                    <input asp-for="Input.About" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.WorkInfo"></label></h4>
+                    <input asp-for="Input.WorkInfo" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Education"></label></h4>
+                    <input asp-for="Input.Education" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label asp-for="Input.Skills"></label></h4>
+                    <input asp-for="Input.Skills" class="form-control" />
+                </div><!--notbar end-->
+                <div class="notbar">
+                    <h4><label>Upload one or more files using this form</label></h4>
+                    <div class="col-md-10">
+                        <input type="file" name="AvatarImage" multiple>
+                    </div>
+                </div>
+                <div class="save-stngs">
+                    <ul>
+                        <li><button type="submit">Save Setting</button></li>
+                    </ul>
+                </div><!--save-stngs end-->
+            </form>
+        </div><!--acc-setting end-->
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

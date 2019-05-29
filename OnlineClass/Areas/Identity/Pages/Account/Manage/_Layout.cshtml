@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IndexModel
+<section class="profile-account-setting">
+    <div class="container">
+        <div class="account-tabs-setting">
+            <div class="row">
+                <div class="col-lg-3">
+                    <partial name="_ManageNav" />
+                </div>
+                <div class="col-lg-9">
+                    @RenderBody()
+                </div>
+            </div>
+        </div><!--account-tabs-setting end-->
+    </div>
+</section>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

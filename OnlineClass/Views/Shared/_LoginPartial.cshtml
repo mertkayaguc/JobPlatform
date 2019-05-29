@@ -1,0 +1,71 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser2> SignInManager
+@inject UserManager<IdentityUser2> UserManager
+@{ var currentUser = UserManager.GetUserAsync(User).Result;
+}
+@{
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <nav>
+            <ul>
+                <li>
+                    <a href="/Home/Feed" title="">
+                        <span><img src="~/images/icon1.png" alt=""></span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/Company/Index" title="">
+                        <span><img src="~/images/icon2.png" alt=""></span>
+                        Companies
+                    </a>
+                </li>
+                <li>
+                    <a href="/Job/Index" title="">
+                        <span><img src="~/images/icon5.png" alt=""></span>
+                        Jobs
+                    </a>
+                </li>
+            </ul>
+        </nav><!--nav end-->
+        <div class="menu-btn">
+            <a href="#" title=""><i class="fa fa-bars"></i></a>
+        </div><!--menu-btn end-->
+        <div class="user-account">
+            <div class="user-info">
+                <img src="@currentUser.PhotoUrl" alt="" width="30" height="30">
+                <a href="/Profile/Index" title="@User.Identity.Name">@User.Identity.Name</a>
+                <i class="la la-sort-down"></i>
+            </div>
+            <div class="user-account-settingss">
+                <h3>Setting</h3>
+                <ul class="us-links">
+                    <li><a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a></li>
+                </ul>
+                <ul class="us-links">
+                    <li>
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                              asp-route-returnUrl="@Url.Page("/", new { area = "" })"
+                              method="post">
+                            <h3 class="tc" style="width: 100%;">
+                                <button type="submit" style="width: 100%;">Logout</button>
+                            </h3>
+                        </form>
+                    </li>
+                </ul>
+            </div><!--user-account-settingss end-->
+        </div>
+    }
+    else
+    { <nav>
+            <ul>
+                <li>
+                    <a href="/Identity/Account/Login">Giriş Yap</a>
+                </li>
+                <li>
+                    <a href="/Identity/Account/Register">Üye Ol</a>
+                </li>
+            </ul>
+        </nav>
+    }
+}

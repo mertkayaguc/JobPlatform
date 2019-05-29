@@ -1,0 +1,567 @@
+/* ::::: https://www.beyazpano.com/css/main.build.css ::::: */
+
+ol, ul { list-style: outside none none; }
+q::before, q::after, blockquote::before, blockquote::after { content: ""; }
+html { font-size: 100%; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0px none; }
+audio:not([controls]) { display: none; }
+img { border: 0px none; }
+button, input, select, textarea { font-size: 100%; margin: 0px; vertical-align: baseline; }
+button, input { line-height: normal; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0px; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; }
+textarea { overflow: auto; vertical-align: top; }
+.container.canvas::before, .container.canvas::after { display: table; content: ""; }
+.container.canvas::after { clear: both; }
+.container.canvas .row::before, .container.canvas .row::after { display: table; content: ""; }
+.container.canvas .row::after { clear: both; }
+body { background-color: rgb(255, 255, 255); margin: 0px; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 11px; font-weight: normal; line-height: 14px; color: rgb(51, 51, 51); }
+.container::before, .container::after { display: table; content: ""; }
+.container::after { clear: both; }
+.container-fluid::before, .container-fluid::after { display: table; content: ""; }
+.container-fluid::after { clear: both; }
+a { color: rgb(59, 89, 152); text-decoration: none; line-height: inherit; font-weight: inherit; }
+a:hover { color: rgb(59, 89, 152); text-decoration: underline; }
+.hide { display: none; }
+.row::before, .row::after { display: table; content: ""; }
+.row::after { clear: both; }
+h1, h2, h3, h4, h5, h6 { color: rgb(51, 51, 51); }
+h1 { margin-bottom: 14px; font-size: 24px; line-height: 28px; }
+h2 { font-size: 20px; letter-spacing: -0.03em; line-height: 28px; }
+h3, h4, h5, h6 { line-height: 28px; }
+h3 { font-size: 15px; font-weight: bold; }
+ul, ol { margin: 0px 0px 14px 25px; }
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0px; }
+ul { list-style: outside none disc; }
+li { line-height: 14px; color: rgb(102, 102, 102); }
+blockquote small::before { content: "— "; }
+form { margin-bottom: 14px; }
+form .clearfix { margin-bottom: 14px; }
+form .clearfix::before, form .clearfix::after { display: table; content: ""; }
+form .clearfix::after { clear: both; }
+label, input, select, textarea { font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 11px; font-weight: normal; line-height: 14px; }
+label { padding-top: 6px; font-size: 11px; font-weight: bold; line-height: 14px; float: left; width: 130px; text-align: right; color: rgb(102, 102, 102); }
+input, textarea, select, .uneditable-input { display: inline-block; width: 210px; height: 14px; padding: 4px; font-size: 11px; line-height: 14px; color: rgb(102, 102, 102); border: 1px solid rgb(212, 218, 232); border-radius: 0px; }
+input[type="file"] { background-color: rgb(255, 255, 255); padding: initial; border: initial; line-height: initial; box-shadow: none; }
+select, input[type="file"] { height: 21px; line-height: 21px; }
+textarea { height: auto; }
+:-moz-placeholder { color: rgb(153, 153, 153); }
+input, textarea { transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset; }
+input:focus, textarea:focus { outline: 0px none; border-color: rgba(82, 168, 236, 0.8); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); }
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus { box-shadow: none; outline: 1px dotted rgb(102, 102, 102); }
+.input-xlarge, input.xlarge, textarea.xlarge, select.xlarge { display: inline-block; float: none; width: 240px; margin-left: 0px; }
+.zebra-striped tbody tr:nth-child(2n+1) td, .zebra-striped tbody tr:nth-child(2n+1) th { background-color: rgb(249, 249, 249); }
+table .header::after { content: ""; float: right; margin-top: 7px; border-width: 0px 4px 4px; border-style: solid; border-color: rgb(0, 0, 0) transparent; visibility: hidden; }
+table .header:hover::after { visibility: visible; }
+table .headerSortDown::after, table .headerSortDown:hover::after { visibility: visible; opacity: 0.6; }
+table .headerSortUp::after { border-width: 4px 4px medium; border-style: solid solid none; border-color: rgb(0, 0, 0) transparent currentcolor; visibility: visible; box-shadow: none; opacity: 0.6; }
+.topbar div > ul, .nav { display: block; float: left; margin: 4px 10px 0px 0px; position: relative; left: 0px; }
+.topbar div > ul > li, .nav > li { display: block; float: left; }
+.topbar div > ul a, .nav a { display: block; float: none; padding: 6px 10px 11px; line-height: 19px; text-decoration: none; }
+.topbar div > ul a:hover, .nav a:hover { color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(98, 122, 173); }
+.topbar div > ul .active > a, .nav .active > a { background-color: rgb(98, 122, 173); }
+li.menu, .dropdown { position: relative; }
+a.menu::after, .dropdown-toggle::after { width: 0px; height: 0px; display: inline-block; content: "&darr;"; text-indent: -99999px; vertical-align: top; margin-top: 8px; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid rgb(255, 255, 255); opacity: 0.5; }
+.menu-dropdown, .dropdown-menu { background-color: rgb(255, 255, 255); float: left; display: none; position: absolute; top: 36px; z-index: 900; min-width: 160px; max-width: 500px; margin-left: 0px; margin-right: 0px; padding: 6px 0px; border-color: rgb(45, 45, 45); border-style: solid; border-width: 1px; border-radius: 0px 0px 6px 6px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); background-clip: padding-box; }
+.menu-dropdown li, .dropdown-menu li { float: none; display: block; }
+.menu-dropdown .divider, .dropdown-menu .divider { height: 1px; margin: 5px 0px; overflow: hidden; background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(255, 255, 255); }
+.topbar .dropdown-menu a, .dropdown-menu a { display: block; padding: 4px 15px; clear: both; font-weight: normal; line-height: 18px; color: rgb(98, 122, 173); }
+.topbar .dropdown-menu a:hover, .dropdown-menu a:hover, .topbar .dropdown-menu a.hover, .dropdown-menu a.hover { background-color: rgb(98, 122, 173); color: rgb(255, 255, 255); text-decoration: none; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.024) inset, 0px -1px rgba(0, 0, 0, 0.024) inset; }
+.tabs::before, .pills::before, .tabs::after, .pills::after { display: table; content: ""; }
+.tabs::after, .pills::after { clear: both; }
+.tabs a.menu::after, .tabs .dropdown-toggle::after { border-top-color: rgb(59, 89, 152); margin-top: 10px; margin-left: 5px; }
+.tabs li.open a.menu::after, .tabs .dropdown.open .dropdown-toggle::after { border-top-color: rgb(98, 122, 173); }
+.btn { cursor: pointer; display: inline-block; background-color: rgb(230, 230, 230); background-repeat: no-repeat; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 25%, rgb(230, 230, 230)); padding: 5px 12px 6px; color: rgb(51, 51, 51); font-size: 11px; font-weight: bold; line-height: 14px; border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(153, 153, 153); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: all 0.1s linear 0s; }
+.btn:hover { background-position: 0px -15px; color: rgb(51, 51, 51); text-decoration: none; }
+.btn:focus { outline: 1px dotted rgb(102, 102, 102); }
+.btn.primary { color: rgb(255, 255, 255); background-color: rgb(59, 89, 152); background-repeat: repeat-x; background-image: -moz-linear-gradient(center top , rgb(98, 122, 173), rgb(59, 89, 152)); border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn.active, .btn:active { box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); }
+:root .alert-message, :root .btn {  }
+button.btn::-moz-focus-inner, input.btn[type="submit"]::-moz-focus-inner { padding: 0px; border: 0px none; }
+.close { float: right; color: rgb(0, 0, 0); font-size: 20px; font-weight: bold; line-height: 10.5px; text-shadow: 0px 1px 0px rgb(255, 255, 255); opacity: 0.25; }
+.close:hover { color: rgb(0, 0, 0); text-decoration: none; opacity: 0.4; }
+.modal { position: fixed; top: 50%; left: 50%; z-index: 11000; width: 560px; margin: -250px 0px 0px -280px; background-color: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 8px; box-shadow: 0px 0px 0px 8px rgba(82, 82, 82, 0.7); background-clip: padding-box; }
+.modal .close { margin-top: 7px; }
+.modal.fade { transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s; top: -25%; }
+.modal-header { border-bottom: 1px solid rgb(238, 238, 238); padding: 5px 15px; }
+.modal-body { padding: 15px; }
+.modal-body form { margin-bottom: 0px; }
+.modal-footer { background-color: rgb(242, 242, 242); padding: 14px 15px 15px; border-top: 1px solid rgb(221, 221, 221); border-radius: 0px 0px 6px 6px; box-shadow: 0px 1px 0px rgb(255, 255, 255) inset; margin-bottom: 0px; }
+.modal-footer::before, .modal-footer::after { display: table; content: ""; }
+.modal-footer::after { clear: both; }
+.modal-footer .btn { float: right; margin-left: 5px; }
+.popover.above::after { bottom: 0px; left: 50%; margin-left: -11px; border-left: 11px solid transparent; border-right: 11px solid transparent; border-top: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.right::after { top: 50%; left: 0px; margin-top: -11px; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-right: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.below::after { top: 0px; left: 50%; margin-left: -11px; border-left: 11px solid transparent; border-right: 11px solid transparent; border-bottom: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.left::after { top: 50%; right: -2px; margin-top: -11px; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-left: 11px solid rgb(255, 255, 255); content: " "; }
+.popover .arrow, .popover.above::after, .popover.right::after, .popover.below::after, .popover.left::after { position: absolute; width: 0px; height: 0px; }
+.fade { transition: opacity 0.15s linear 0s; opacity: 0; }
+.media-grid::before, .media-grid::after { display: table; content: ""; }
+.media-grid::after { clear: both; }
+html, body { height: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 12px; font-family: arial,tahoma,verdana,sans-serif; color: rgb(0, 0, 0); line-height: 1.28; margin: 0px; padding: 0px; text-align: left; direction: ltr; unicode-bidi: embed; }
+body { padding: 40px 0px 0px; }
+.clearfix::after { clear: both; content: "."; display: block; font-size: 0px; height: 0px; line-height: 0; visibility: hidden; }
+.clearfix {  }
+.clear { clear: both; }
+.hiddenTxt { position: absolute; left: -99999px; }
+a:focus, a:active, button:focus, button:active { outline: medium none; }
+a.close { cursor: pointer; }
+.btn.userDefaultBtn, .ui-datepicker-close { border: 1px solid rgb(208, 115, 0); background: rgb(254, 185, 0) url('beyazpanobuttonssprite.png') no-repeat scroll -6px -745px; font-size: 12px; color: rgb(0, 0, 0); filter: none; }
+.btn, .ui-datepicker-current { cursor: pointer; display: inline-block; background-color: rgb(226, 224, 224); background-repeat: no-repeat; background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249) 25%, rgb(226, 224, 224)); padding: 7px 10px 6px; color: rgb(45, 45, 45); font-size: 12px; font-weight: bold; line-height: 12px; border: 1px solid rgb(156, 156, 156); border-radius: 0px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: none 0s ease 0s ; }
+.btn:hover, .ui-datepicker-current:hover { background-position: 0px -15px; color: rgb(45, 45, 45); text-decoration: none; }
+.btn:focus, .ui-datepicker-current:focus { outline: 1px dotted rgb(102, 102, 102); }
+input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, select { color: rgb(17, 17, 17); font-size: 100%; }
+.headerContent { width: 980px; margin: 0px auto; }
+.headerContent nav > ul.nav { margin: 0px 7px 0px 15px; float: left; display: block; position: relative; }
+.headerContent nav > ul.nav a, .headerContent nav > ul.nav a:hover { padding: 13px 8px; margin: 0px; line-height: 14px; font-size: 14px; font-weight: bold; display: block; float: none; text-decoration: none; background: transparent none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.headerContent nav > ul.nav a:hover, .headerContent ul.accountDetails a.userName:hover { color: rgb(121, 189, 216); }
+.headerContent nav > ul.nav > li.active > a { color: rgb(121, 189, 216); }
+.websiteWrapper { width: 980px; margin: 40px auto 0px; }
+.left { float: left; }
+.right { float: right; }
+.headerContent nav > ul.nav { margin: 0px 0px 0px 1px; float: left; display: block; position: relative; }
+.homeFooter, .loggedinFooter { width: 100%; height: 110px; background: rgb(36, 36, 36) url('footerbg.png') repeat-x scroll left top; }
+.loggedinFooter { margin-top: 30px; background: transparent none repeat scroll 0% 0%; border-top: 1px solid rgb(219, 219, 219); }
+.footerContainer { width: 980px; margin: 0px auto; }
+ul.footerContainer > li { float: left; width: 38.9%; }
+ul.footerContainer > li.right { float: right; width: 61%; }
+ul.footerContainer > li > ul > li { padding: 25px 0px 0px; display: block; }
+ul.footerContainer > li > ul.footerLinks > li { text-align: right; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a:hover, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active:hover { margin-right: 12px; font-size: 12px; color: rgb(153, 153, 153); text-align: right; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active:hover { font-weight: bold; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a:hover { text-decoration: underline; }
+ul.footerContainer > li > ul.footerCopyright > li span.copyright { padding-top: 15px; display: block; font-size: 12px; color: rgb(153, 153, 153); }
+ul.footerContainer > li > ul.footerLinks > li.footerNav a, ul.footerContainer > li > ul.footerLinks > li.footerNav a:hover { margin-left: 5px; font-size: 12px; color: rgb(153, 153, 153); text-decoration: none; }
+ul.footerContainer > li > ul.footerLinks > li.footerNav a:hover { text-decoration: underline; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial { padding-top: 39px; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoFacebook, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoFacebook:hover, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter:hover { width: 27px; height: 27px; margin-left: 12px; display: block; float: right; background: transparent url('mainpage.png') no-repeat scroll 0px -491px; text-decoration: none; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter:hover { background: transparent url('mainpage.png') no-repeat scroll -41px -491px; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a span, ul.footerContainer > li > ul.footerLinks > li.footerSocial a:hover span { visibility: hidden; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial > span { font-size: 12px; line-height: 26px; color: rgb(153, 153, 153); float: right; }
+.modal { width: 563px; box-shadow: none; border-radius: 0px; background: transparent none repeat scroll 0% 0%; border: medium none; }
+.modal .modal-header { padding: 15px 0px 0px; background: transparent url('popupsprite.png') no-repeat scroll 0px -67px; border: 0px none; }
+.modal .modal-header .modalHeaderContainer, .modal .homeDefaultPopUp .modal-header .modalHeaderContainer { padding: 16px 5px 12px 18px; margin: 0px 16px 0px 14px; background: rgb(0, 146, 237) none repeat scroll 0% 0%; }
+.modal .modal-header .modalHeaderContainer h3, .modal .homeDefaultPopUp .modal-header .modalHeaderContainer h3 { font-size: 18px; font-weight: bold; color: rgb(255, 255, 255); line-height: 18px; }
+.modal .modal-body { padding: 0px 15px 15px; background: transparent url('popuptopmiddle.png') repeat-y scroll left top; position: relative; }
+.modal .modal-body .modalContent { padding: 20px 10px 19px 30px; max-height: 365px; min-height: 120px; overflow-y: auto; margin-right: 1px; overflow-x: hidden; }
+.modalForm { margin: 0px; padding: 0px; }
+.modalForm li, .modal .homeDefaultPopUp .modalForm li { margin: 4px 0px; padding: 0px; display: block; }
+.modalForm li > label, .modalForm li > label.error, .editUserProfile li > label, .captchaContainer label { width: 198px; font-size: 12px; font-weight: bold; line-height: 24px; float: left; text-align: left; color: rgb(45, 45, 45); display: block; }
+.modalForm li > input, .modalForm li > input:focus, .modalForm li > input:hover, .modalForm .dateInputlist li > input, .modalForm .dateInputlist li > input:focus, .modalForm .dateInputlist li > input:hover { width: 263px; padding: 4px 2px 4px 10px; border-radius: 0px; border: 1px solid rgb(178, 179, 180); background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(45, 45, 45); font-size: 12px; line-height: 12px; }
+.modalForm li > input:focus { border: 1px solid rgb(131, 220, 255); }
+.modal .modal-footer { padding: 0px 0px 15px; background: transparent url('popupsprite.png') no-repeat scroll 0px -314px; border-top: 0px none; box-shadow: none; }
+.modal .modal-footer .modalFooterContainer { margin: 0px 16px 0px 15px; padding-bottom: 30px; background: rgb(241, 247, 250) none repeat scroll 0% 0%; }
+.modal .modal-footer .modalFooterContainer .modalButtons { padding: 10px 10px 14px 224px; background: rgb(242, 242, 242) none repeat scroll 0% 0%; border-top: 1px solid rgb(221, 221, 221); }
+.modal .modal-footer .modalFooterContainer .modalButtons .btn { float: none; }
+.modal .modalFooterContainer.modalFooterContainerUser { padding-bottom: 0px; }
+.modal .modalHeaderContainer .close, .modal .homeDefaultPopUp .modalHeaderContainer .close { margin: -3px 5px 0px 0px; width: 21px; height: 20px; background: transparent url('popupsprite.png') no-repeat scroll 0px -17px; opacity: 1; }
+.modal .close:hover { opacity: 0.7; }
+.modal .close { margin-top: 0px; cursor: pointer; }
+.wrapperBg { background: transparent url('wrapper_bg.png') repeat-y scroll left top; }
+.accountDetails { width: auto; margin: 0px; padding: 0px; }
+.accountDetails li { float: left; list-style: outside none none; position: relative; }
+.accountDetails li > ul.dropdown-menu li { background: transparent none repeat scroll 0% 0%; }
+.headerContent ul.accountDetails a.userName { color: rgb(255, 255, 255); }
+.headerContent ul.accountDetails a.userName:hover { text-decoration: none; }
+.accountDetails li > ul.dropdown-menu li a, .accountDetails li > ul.dropdown-menu li a:hover { background: transparent none repeat scroll 0% 0%; }
+.searchTop a, .searchTop a:hover, .infoTop a, .infoTop a:hover, .messagesTop a, .messagesTop a:hover { width: 40px; height: 40px; display: block; background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -55px -105px; line-height: 40px; border-left: 1px solid rgb(45, 45, 45); text-decoration: none; }
+.searchTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -109px -105px; }
+.infoTop a { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -55px -896px; }
+.infoTop a.has-new-notification, .infoTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -109px -896px; }
+.messagesTop a { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -58px -855px; }
+.messagesTop a.has-new-friend-requests, .messagesTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -112px -855px; }
+.accountDetails li .dropdown-menu { width: 400px; top: 40px; border-top: 0px none; border-radius: 0px; box-shadow: none; background-clip: padding-box; }
+.accountDetails li.dropdown .dropdown-menu { width: 210px; right: 0px; left: auto; }
+.accountDetails li.messagesTop .dropdown-menu { left: -90px; }
+.accountDetails li.messagesTop .dropdown-menu a, .accountDetails li.messagesTop .dropdown-menu a:hover { border: medium none; }
+.accountDetails li.infoTop .dropdown-menu { left: -130px; }
+.accountDetails li.infoTop .dropdown-menu a, .accountDetails li.infoTop .dropdown-menu a:hover { border: medium none; }
+.accountDetails li.dropdown { float: left; right: 0px; }
+.accountDetails a.menu::after, .accountDetails .dropdown-toggle::after { border-top: 0px none; }
+.accountDetails .left img { float: left; margin-top: 7px; margin-right: 5px; }
+.userName { padding: 0px 5px; font-weight: bold; white-space: nowrap; line-height: 40px; text-align: left; display: inline-block; }
+.userName > span { display: inline-block; max-width: 107px; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; }
+.accountDetails li.dropdown a, .accountDetails li.dropdown a:hover { float: right; font-size: 12px; text-decoration: none; color: rgb(255, 255, 255); line-height: 40px; }
+.accountDetails li.dropdown .dropdownToggle, .accountDetails li.dropdown .dropdownToggle:hover { margin-top: 7px; background: rgb(57, 57, 57) url('beyazpanoinstructorsprite.png') no-repeat scroll -48px -972px; border: 1px solid rgb(15, 15, 15); line-height: 12px; width: 25px; height: 25px; }
+.accountDetails li.dropdown .dropdownToggle:hover { background: rgb(65, 65, 65) url('beyazpanoinstructorsprite.png') no-repeat scroll -48px -972px; }
+.accountDetails .messagesTop .dropdown-menu li, .accountDetails .messagesTop .dropdown-menu li:hover, .accountDetails .infoTop .dropdown-menu li, .accountDetails .infoTop .dropdown-menu li:hover { margin: 0px 10px; padding: 0px; display: block; float: none; }
+.accountDetails li.messagesTop .dropdown-menu li h3, .accountDetails li.infoTop .dropdown-menu li h3 { padding: 10px 0px 5px; margin: 0px; font-size: 13px; line-height: 13px; color: rgb(0, 27, 46); font-weight: bold; display: block; border-bottom: 1px solid rgb(199, 199, 199); }
+.accountDetails li.messagesTop .dropdown-menu li span, .accountDetails li.infoTop .dropdown-menu li span { padding: 8px 0px; display: block; font-size: 11px; color: rgb(0, 27, 46); text-align: left; }
+.accountDetails li.messagesTop .dropdown-menu li a, .accountDetails li.messagesTop .dropdown-menu li a:hover, .accountDetails li.infoTop .dropdown-menu li a, .accountDetails li.infoTop .dropdown-menu li a:hover { width: 100%; height: 22px; margin: 0px; padding: 2px 0px 3px; display: block; float: none; box-shadow: none; color: rgb(50, 124, 187); line-height: 22px; border-bottom: 1px solid rgb(207, 207, 207); }
+.accountDetails li.messagesTop .dropdown-menu li a:hover, .accountDetails li.infoTop .dropdown-menu li a:hover { background: rgb(239, 246, 250) none repeat scroll 0% 0%; }
+.accountDetails .searchTop .dropdown-menu li #navigationSearch { margin: 10px; }
+.accountDetails .searchTop .dropdown-menu li #navigationSearch input { width: 339px; height: 24px; padding: 0px 5px; line-height: 24px; font-size: 12px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(45, 45, 45) currentcolor rgb(45, 45, 45) rgb(45, 45, 45); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: none; float: right; }
+.accountDetails .searchTop .dropdown #navigationSearch a.searchTopButton, .accountDetails .searchTop .dropdown #navigationSearch a.searchTopButton:hover { width: 30px; height: 26px; line-height: 26px; margin: 0px; padding: 0px; display: block; float: right; background: rgb(255, 255, 255) url('beyazpanoinstructorsprite.png') no-repeat scroll -150px -176px; border: medium none; }
+li.messagesTop > a > span, li.infoTop > a > span, li.messagesTop > a:hover > span, li.infoTop > a:hover > span { visibility: hidden; text-decoration: none; }
+.leftSidebar, .leftWideSidebar { width: 179px; min-height: 1px; border-right: 1px solid rgb(207, 207, 207); }
+.middleBar, .middleWideBar { width: 534px; min-height: 500px; padding: 16px 10px; margin: 0px; position: relative; }
+.rightSidebar { width: 233px; margin-top: 5px; padding-left: 10px; }
+.userActions { margin-bottom: 10px; }
+.userMessageAttachment { min-height: 36px; }
+.userMessageAttachment li { min-width: 110px; float: left; margin: 0px; padding: 0px; line-height: 35px; }
+.userMessageAttachment li a, .userMessageAttachment li a:hover { padding-top: 2px; padding-bottom: 2px; padding-left: 30px; text-decoration: none; font-size: 13px; color: rgb(50, 124, 187); background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -580px -768px; }
+.userMessageAttachment .userAttachements, .userMessageAttachment .userAttachements:hover { padding-left: 30px; background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -580px -744px; }
+.userPostAttachements { margin-top: 2px; }
+.userMessageAttachment li > a.shareButton, .userMessageAttachment li > a.shareButton:hover { background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -579px -793px; }
+table#privacy_settings tr.privacyHeader td::after { border: medium none; }
+@media �screen {
+}
+.menu-dropdown, .dropdown-menu { background-color: rgb(255, 255, 255); float: left; display: none; position: absolute; top: 20px; left: 0px; z-index: 99999; min-width: 160px; max-width: 500px; margin-left: 0px; margin-right: 0px; padding: 0px; border-color: rgb(45, 45, 45); border-style: solid; border-width: 1px; border-radius: 0px; background-clip: padding-box; }
+.menu-dropdown li, .dropdown-menu li { float: none; display: block; background-color: rgb(255, 255, 255); position: relative; }
+.menu-dropdown .divider, .dropdown-menu .divider { height: 1px; margin: 5px 0px; overflow: hidden; background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(255, 255, 255); }
+.accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a, .accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a:hover, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { width: 50%; float: left; display: block; background: transparent none repeat scroll 0% 0%; border: 0px none; clear: none; color: rgb(154, 159, 168); font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { width: 100%; }
+.accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a:hover, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { color: rgb(50, 124, 187); text-decoration: underline; }
+#notifications-dropdown .dropdown-menu li span { padding: 4px 0px; margin-bottom: 5px; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li a, .accountDetails li.messagesTop ul.dropdown-menu > li a, .accountDetails li.messagesTop ul.dropdown-menu > li a:hover, .accountDetails li.messagesTop .dropdown-menu li.userRequest a:hover { line-height: 15px; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a:hover, .accountDetails li.messagesTop ul.dropdown-menu li a, .accountDetails li.messagesTop ul.dropdown-menu li a:hover { border-bottom: 0px none; display: inline; background: transparent none repeat scroll 0% 0%; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a { font-size: 100%; font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a:hover { text-decoration: underline; font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a.connections { margin-top: 2px; margin-bottom: 2px; }
+.accountDetails li.infoTop .dropdown-menu.notificationsDropdown li span { margin: 0px 5px; display: inline; }
+#notifications-dropdown .dropdown-menu li.notifListEmpty { padding-top: 7px; padding-bottom: 7px; }
+#notifications-dropdown .dropdown-menu li.notifListEmpty span { margin-left: 0px; }
+#upload_list *, .userPostAttachements *, .profileInfo h2, .profileInfo > li > div, .description_assignment, .dropboxStudContainer p, .dropboxDownloadContainer * { overflow-wrap: break-word; }
+.btn.primary { color: rgb(255, 255, 255); background-color: rgb(59, 89, 152); background-repeat: repeat-x; background-image: -moz-linear-gradient(center top , rgb(96, 120, 172), rgb(60, 90, 152)); border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn.userPostButton:hover, .btn.userDefaultBtn:hover, .ui-datepicker-close:hover, .switchCourseButton .open .userDefaultBtn { background: rgb(2, 197, 248) url('beyazpanobuttonssprite.png') no-repeat scroll -6px -781px; color: rgb(255, 255, 255); border-color: rgb(52, 109, 132); outline: medium none; }
+#requests-dropdown .dropdown-menu { max-height: 500px; overflow-y: auto; }
+@media not all {
+}
+#pageLogo a, #pageLogo a:hover { height: 29px; width: 170px; margin: 6px 0px 0px; display: block; background-image: url('beyazpanoinstructorsprite.png'); background-position: 0px -1010px; background-repeat: no-repeat; text-decoration: none; }
+#pageLogo a span, #pageLogo a:hover span { color: rgb(45, 45, 45); visibility: hidden; text-decoration: none; }
+.pageHeader { height: 40px; position: fixed; top: 0px; left: 0px; right: 0px; z-index: 10000; overflow: visible; background-color: rgb(45, 45, 45); }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, a, b, i, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0px; padding: 0px; border: 0px none; outline: medium none !important; vertical-align: baseline; background: transparent none repeat scroll 0% 0%; font-family: arial,tahoma,verdana,sans-serif; }
+body { line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+nav ul { list-style: outside none none; }
+ul, ol { margin: 0px; padding: 0px; list-style: outside none none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+a { margin: 0px; padding: 0px; font-size: 100%; vertical-align: baseline; background: transparent none repeat scroll 0% 0%; }
+input, select { vertical-align: middle; }
+.ui-helper-clearfix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+input, textarea { transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset; }
+input:focus, textarea:focus { outline: 0px none; border-color: rgba(82, 168, 236, 0.8); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); }
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus { box-shadow: none; outline: 1px dotted rgb(102, 102, 102); }
+input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input { display: inline-block; padding: 4px; font-size: 13px; line-height: 18px; color: rgb(128, 128, 128); border: 1px solid rgb(204, 204, 204); border-radius: 0px; }
+.ui-dialog-buttonset .ui-button:nth-child(2) { cursor: pointer; display: inline-block; background-color: rgb(230, 230, 230); background-repeat: no-repeat; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 25%, rgb(230, 230, 230)); padding: 5px 14px 6px; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); color: rgb(51, 51, 51); font-size: 13px; line-height: normal; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 4px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: all 0.1s linear 0s; overflow: visible; }
+#colorbox, #cboxOverlay, #cboxWrapper { position: absolute; top: 0px; left: 0px; z-index: 9999; overflow: hidden; }
+#cboxOverlay { position: fixed; width: 100%; height: 100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+#cboxLoadedContent { overflow: auto; }
+#cboxTitle { margin: 0px; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+#colorbox, #cboxContent, #cboxLoadedContent { box-sizing: content-box; }
+#cboxOverlay { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#colorbox {  }
+#cboxContent { margin-top: 32px; overflow: visible; }
+#cboxLoadedContent { background: rgb(0, 0, 0) none repeat scroll 0% 0%; padding: 1px; }
+#cboxTitle { position: absolute; color: rgb(0, 0, 0); }
+#cboxCurrent { position: absolute; top: -22px; right: 205px; text-indent: -9999px; }
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose { text-indent: -9999px; width: 20px; height: 20px; position: absolute; top: -20px; background: transparent url('controls.png') no-repeat scroll 0px 0px; }
+#cboxPrevious { background-position: 0px 0px; right: 44px; }
+#cboxPrevious:hover { background-position: 0px -25px; }
+#cboxNext { background-position: -25px 0px; right: 22px; }
+#cboxNext:hover { background-position: -25px -25px; }
+#cboxClose { background-position: -50px 0px; right: 0px; }
+#cboxClose:hover { background-position: -50px -25px; }
+/* ::::: https://www.beyazpano.com/css/main.build.css ::::: */
+
+ol, ul { list-style: outside none none; }
+q::before, q::after, blockquote::before, blockquote::after { content: ""; }
+html { font-size: 100%; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0px none; }
+audio:not([controls]) { display: none; }
+img { border: 0px none; }
+button, input, select, textarea { font-size: 100%; margin: 0px; vertical-align: baseline; }
+button, input { line-height: normal; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0px none; padding: 0px; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; }
+textarea { overflow: auto; vertical-align: top; }
+.container.canvas::before, .container.canvas::after { display: table; content: ""; }
+.container.canvas::after { clear: both; }
+.container.canvas .row::before, .container.canvas .row::after { display: table; content: ""; }
+.container.canvas .row::after { clear: both; }
+body { background-color: rgb(255, 255, 255); margin: 0px; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 11px; font-weight: normal; line-height: 14px; color: rgb(51, 51, 51); }
+.container::before, .container::after { display: table; content: ""; }
+.container::after { clear: both; }
+.container-fluid::before, .container-fluid::after { display: table; content: ""; }
+.container-fluid::after { clear: both; }
+a { color: rgb(59, 89, 152); text-decoration: none; line-height: inherit; font-weight: inherit; }
+a:hover { color: rgb(59, 89, 152); text-decoration: underline; }
+.hide { display: none; }
+.row::before, .row::after { display: table; content: ""; }
+.row::after { clear: both; }
+h1, h2, h3, h4, h5, h6 { color: rgb(51, 51, 51); }
+h1 { margin-bottom: 14px; font-size: 24px; line-height: 28px; }
+h2 { font-size: 20px; letter-spacing: -0.03em; line-height: 28px; }
+h3, h4, h5, h6 { line-height: 28px; }
+h3 { font-size: 15px; font-weight: bold; }
+ul, ol { margin: 0px 0px 14px 25px; }
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0px; }
+ul { list-style: outside none disc; }
+li { line-height: 14px; color: rgb(102, 102, 102); }
+blockquote small::before { content: "— "; }
+form { margin-bottom: 14px; }
+form .clearfix { margin-bottom: 14px; }
+form .clearfix::before, form .clearfix::after { display: table; content: ""; }
+form .clearfix::after { clear: both; }
+label, input, select, textarea { font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 11px; font-weight: normal; line-height: 14px; }
+label { padding-top: 6px; font-size: 11px; font-weight: bold; line-height: 14px; float: left; width: 130px; text-align: right; color: rgb(102, 102, 102); }
+input, textarea, select, .uneditable-input { display: inline-block; width: 210px; height: 14px; padding: 4px; font-size: 11px; line-height: 14px; color: rgb(102, 102, 102); border: 1px solid rgb(212, 218, 232); border-radius: 0px; }
+input[type="file"] { background-color: rgb(255, 255, 255); padding: initial; border: initial; line-height: initial; box-shadow: none; }
+select, input[type="file"] { height: 21px; line-height: 21px; }
+textarea { height: auto; }
+:-moz-placeholder { color: rgb(153, 153, 153); }
+input, textarea { transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset; }
+input:focus, textarea:focus { outline: 0px none; border-color: rgba(82, 168, 236, 0.8); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); }
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus { box-shadow: none; outline: 1px dotted rgb(102, 102, 102); }
+.input-xlarge, input.xlarge, textarea.xlarge, select.xlarge { display: inline-block; float: none; width: 240px; margin-left: 0px; }
+.zebra-striped tbody tr:nth-child(2n+1) td, .zebra-striped tbody tr:nth-child(2n+1) th { background-color: rgb(249, 249, 249); }
+table .header::after { content: ""; float: right; margin-top: 7px; border-width: 0px 4px 4px; border-style: solid; border-color: rgb(0, 0, 0) transparent; visibility: hidden; }
+table .header:hover::after { visibility: visible; }
+table .headerSortDown::after, table .headerSortDown:hover::after { visibility: visible; opacity: 0.6; }
+table .headerSortUp::after { border-width: 4px 4px medium; border-style: solid solid none; border-color: rgb(0, 0, 0) transparent currentcolor; visibility: visible; box-shadow: none; opacity: 0.6; }
+.topbar div > ul, .nav { display: block; float: left; margin: 4px 10px 0px 0px; position: relative; left: 0px; }
+.topbar div > ul > li, .nav > li { display: block; float: left; }
+.topbar div > ul a, .nav a { display: block; float: none; padding: 6px 10px 11px; line-height: 19px; text-decoration: none; }
+.topbar div > ul a:hover, .nav a:hover { color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(98, 122, 173); }
+.topbar div > ul .active > a, .nav .active > a { background-color: rgb(98, 122, 173); }
+li.menu, .dropdown { position: relative; }
+a.menu::after, .dropdown-toggle::after { width: 0px; height: 0px; display: inline-block; content: "&darr;"; text-indent: -99999px; vertical-align: top; margin-top: 8px; margin-left: 4px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid rgb(255, 255, 255); opacity: 0.5; }
+.menu-dropdown, .dropdown-menu { background-color: rgb(255, 255, 255); float: left; display: none; position: absolute; top: 36px; z-index: 900; min-width: 160px; max-width: 500px; margin-left: 0px; margin-right: 0px; padding: 6px 0px; border-color: rgb(45, 45, 45); border-style: solid; border-width: 1px; border-radius: 0px 0px 6px 6px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); background-clip: padding-box; }
+.menu-dropdown li, .dropdown-menu li { float: none; display: block; }
+.menu-dropdown .divider, .dropdown-menu .divider { height: 1px; margin: 5px 0px; overflow: hidden; background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(255, 255, 255); }
+.topbar .dropdown-menu a, .dropdown-menu a { display: block; padding: 4px 15px; clear: both; font-weight: normal; line-height: 18px; color: rgb(98, 122, 173); }
+.topbar .dropdown-menu a:hover, .dropdown-menu a:hover, .topbar .dropdown-menu a.hover, .dropdown-menu a.hover { background-color: rgb(98, 122, 173); color: rgb(255, 255, 255); text-decoration: none; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.024) inset, 0px -1px rgba(0, 0, 0, 0.024) inset; }
+.tabs::before, .pills::before, .tabs::after, .pills::after { display: table; content: ""; }
+.tabs::after, .pills::after { clear: both; }
+.tabs a.menu::after, .tabs .dropdown-toggle::after { border-top-color: rgb(59, 89, 152); margin-top: 10px; margin-left: 5px; }
+.tabs li.open a.menu::after, .tabs .dropdown.open .dropdown-toggle::after { border-top-color: rgb(98, 122, 173); }
+.btn { cursor: pointer; display: inline-block; background-color: rgb(230, 230, 230); background-repeat: no-repeat; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 25%, rgb(230, 230, 230)); padding: 5px 12px 6px; color: rgb(51, 51, 51); font-size: 11px; font-weight: bold; line-height: 14px; border-width: 1px; border-style: solid; border-color: rgb(102, 102, 102) rgb(102, 102, 102) rgb(153, 153, 153); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: all 0.1s linear 0s; }
+.btn:hover { background-position: 0px -15px; color: rgb(51, 51, 51); text-decoration: none; }
+.btn:focus { outline: 1px dotted rgb(102, 102, 102); }
+.btn.primary { color: rgb(255, 255, 255); background-color: rgb(59, 89, 152); background-repeat: repeat-x; background-image: -moz-linear-gradient(center top , rgb(98, 122, 173), rgb(59, 89, 152)); border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn.active, .btn:active { box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); }
+:root .alert-message, :root .btn {  }
+button.btn::-moz-focus-inner, input.btn[type="submit"]::-moz-focus-inner { padding: 0px; border: 0px none; }
+.close { float: right; color: rgb(0, 0, 0); font-size: 20px; font-weight: bold; line-height: 10.5px; text-shadow: 0px 1px 0px rgb(255, 255, 255); opacity: 0.25; }
+.close:hover { color: rgb(0, 0, 0); text-decoration: none; opacity: 0.4; }
+.modal { position: fixed; top: 50%; left: 50%; z-index: 11000; width: 560px; margin: -250px 0px 0px -280px; background-color: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 8px; box-shadow: 0px 0px 0px 8px rgba(82, 82, 82, 0.7); background-clip: padding-box; }
+.modal .close { margin-top: 7px; }
+.modal.fade { transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s; top: -25%; }
+.modal-header { border-bottom: 1px solid rgb(238, 238, 238); padding: 5px 15px; }
+.modal-body { padding: 15px; }
+.modal-body form { margin-bottom: 0px; }
+.modal-footer { background-color: rgb(242, 242, 242); padding: 14px 15px 15px; border-top: 1px solid rgb(221, 221, 221); border-radius: 0px 0px 6px 6px; box-shadow: 0px 1px 0px rgb(255, 255, 255) inset; margin-bottom: 0px; }
+.modal-footer::before, .modal-footer::after { display: table; content: ""; }
+.modal-footer::after { clear: both; }
+.modal-footer .btn { float: right; margin-left: 5px; }
+.popover.above::after { bottom: 0px; left: 50%; margin-left: -11px; border-left: 11px solid transparent; border-right: 11px solid transparent; border-top: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.right::after { top: 50%; left: 0px; margin-top: -11px; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-right: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.below::after { top: 0px; left: 50%; margin-left: -11px; border-left: 11px solid transparent; border-right: 11px solid transparent; border-bottom: 11px solid rgb(255, 255, 255); content: " "; }
+.popover.left::after { top: 50%; right: -2px; margin-top: -11px; border-top: 11px solid transparent; border-bottom: 11px solid transparent; border-left: 11px solid rgb(255, 255, 255); content: " "; }
+.popover .arrow, .popover.above::after, .popover.right::after, .popover.below::after, .popover.left::after { position: absolute; width: 0px; height: 0px; }
+.fade { transition: opacity 0.15s linear 0s; opacity: 0; }
+.media-grid::before, .media-grid::after { display: table; content: ""; }
+.media-grid::after { clear: both; }
+html, body { height: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 12px; font-family: arial,tahoma,verdana,sans-serif; color: rgb(0, 0, 0); line-height: 1.28; margin: 0px; padding: 0px; text-align: left; direction: ltr; unicode-bidi: embed; }
+body { padding: 40px 0px 0px; }
+.clearfix::after { clear: both; content: "."; display: block; font-size: 0px; height: 0px; line-height: 0; visibility: hidden; }
+.clearfix {  }
+.clear { clear: both; }
+.hiddenTxt { position: absolute; left: -99999px; }
+a:focus, a:active, button:focus, button:active { outline: medium none; }
+a.close { cursor: pointer; }
+.btn.userDefaultBtn, .ui-datepicker-close { border: 1px solid rgb(208, 115, 0); background: rgb(254, 185, 0) url('beyazpanobuttonssprite.png') no-repeat scroll -6px -745px; font-size: 12px; color: rgb(0, 0, 0); filter: none; }
+.btn, .ui-datepicker-current { cursor: pointer; display: inline-block; background-color: rgb(226, 224, 224); background-repeat: no-repeat; background-image: linear-gradient(rgb(249, 249, 249), rgb(249, 249, 249) 25%, rgb(226, 224, 224)); padding: 7px 10px 6px; color: rgb(45, 45, 45); font-size: 12px; font-weight: bold; line-height: 12px; border: 1px solid rgb(156, 156, 156); border-radius: 0px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: none 0s ease 0s ; }
+.btn:hover, .ui-datepicker-current:hover { background-position: 0px -15px; color: rgb(45, 45, 45); text-decoration: none; }
+.btn:focus, .ui-datepicker-current:focus { outline: 1px dotted rgb(102, 102, 102); }
+input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, select { color: rgb(17, 17, 17); font-size: 100%; }
+.headerContent { width: 980px; margin: 0px auto; }
+.headerContent nav > ul.nav { margin: 0px 7px 0px 15px; float: left; display: block; position: relative; }
+.headerContent nav > ul.nav a, .headerContent nav > ul.nav a:hover { padding: 13px 8px; margin: 0px; line-height: 14px; font-size: 14px; font-weight: bold; display: block; float: none; text-decoration: none; background: transparent none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.headerContent nav > ul.nav a:hover, .headerContent ul.accountDetails a.userName:hover { color: rgb(121, 189, 216); }
+.headerContent nav > ul.nav > li.active > a { color: rgb(121, 189, 216); }
+.websiteWrapper { width: 980px; margin: 40px auto 0px; }
+.left { float: left; }
+.right { float: right; }
+.headerContent nav > ul.nav { margin: 0px 0px 0px 1px; float: left; display: block; position: relative; }
+.homeFooter, .loggedinFooter { width: 100%; height: 110px; background: rgb(36, 36, 36) url('footerbg.png') repeat-x scroll left top; }
+.loggedinFooter { margin-top: 30px; background: transparent none repeat scroll 0% 0%; border-top: 1px solid rgb(219, 219, 219); }
+.footerContainer { width: 980px; margin: 0px auto; }
+ul.footerContainer > li { float: left; width: 38.9%; }
+ul.footerContainer > li.right { float: right; width: 61%; }
+ul.footerContainer > li > ul > li { padding: 25px 0px 0px; display: block; }
+ul.footerContainer > li > ul.footerLinks > li { text-align: right; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a:hover, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active:hover { margin-right: 12px; font-size: 12px; color: rgb(153, 153, 153); text-align: right; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active, ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a.active:hover { font-weight: bold; }
+ul.footerContainer > li > ul.footerCopyright > li.footerLanguage a:hover { text-decoration: underline; }
+ul.footerContainer > li > ul.footerCopyright > li span.copyright { padding-top: 15px; display: block; font-size: 12px; color: rgb(153, 153, 153); }
+ul.footerContainer > li > ul.footerLinks > li.footerNav a, ul.footerContainer > li > ul.footerLinks > li.footerNav a:hover { margin-left: 5px; font-size: 12px; color: rgb(153, 153, 153); text-decoration: none; }
+ul.footerContainer > li > ul.footerLinks > li.footerNav a:hover { text-decoration: underline; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial { padding-top: 39px; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoFacebook, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoFacebook:hover, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter:hover { width: 27px; height: 27px; margin-left: 12px; display: block; float: right; background: transparent url('mainpage.png') no-repeat scroll 0px -491px; text-decoration: none; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter, ul.footerContainer > li > ul.footerLinks > li.footerSocial a.beyazpanoTwitter:hover { background: transparent url('mainpage.png') no-repeat scroll -41px -491px; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial a span, ul.footerContainer > li > ul.footerLinks > li.footerSocial a:hover span { visibility: hidden; }
+ul.footerContainer > li > ul.footerLinks > li.footerSocial > span { font-size: 12px; line-height: 26px; color: rgb(153, 153, 153); float: right; }
+.modal { width: 563px; box-shadow: none; border-radius: 0px; background: transparent none repeat scroll 0% 0%; border: medium none; }
+.modal .modal-header { padding: 15px 0px 0px; background: transparent url('popupsprite.png') no-repeat scroll 0px -67px; border: 0px none; }
+.modal .modal-header .modalHeaderContainer, .modal .homeDefaultPopUp .modal-header .modalHeaderContainer { padding: 16px 5px 12px 18px; margin: 0px 16px 0px 14px; background: rgb(0, 146, 237) none repeat scroll 0% 0%; }
+.modal .modal-header .modalHeaderContainer h3, .modal .homeDefaultPopUp .modal-header .modalHeaderContainer h3 { font-size: 18px; font-weight: bold; color: rgb(255, 255, 255); line-height: 18px; }
+.modal .modal-body { padding: 0px 15px 15px; background: transparent url('popuptopmiddle.png') repeat-y scroll left top; position: relative; }
+.modal .modal-body .modalContent { padding: 20px 10px 19px 30px; max-height: 365px; min-height: 120px; overflow-y: auto; margin-right: 1px; overflow-x: hidden; }
+.modalForm { margin: 0px; padding: 0px; }
+.modalForm li, .modal .homeDefaultPopUp .modalForm li { margin: 4px 0px; padding: 0px; display: block; }
+.modalForm li > label, .modalForm li > label.error, .editUserProfile li > label, .captchaContainer label { width: 198px; font-size: 12px; font-weight: bold; line-height: 24px; float: left; text-align: left; color: rgb(45, 45, 45); display: block; }
+.modalForm li > input, .modalForm li > input:focus, .modalForm li > input:hover, .modalForm .dateInputlist li > input, .modalForm .dateInputlist li > input:focus, .modalForm .dateInputlist li > input:hover { width: 263px; padding: 4px 2px 4px 10px; border-radius: 0px; border: 1px solid rgb(178, 179, 180); background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(45, 45, 45); font-size: 12px; line-height: 12px; }
+.modalForm li > input:focus { border: 1px solid rgb(131, 220, 255); }
+.modal .modal-footer { padding: 0px 0px 15px; background: transparent url('popupsprite.png') no-repeat scroll 0px -314px; border-top: 0px none; box-shadow: none; }
+.modal .modal-footer .modalFooterContainer { margin: 0px 16px 0px 15px; padding-bottom: 30px; background: rgb(241, 247, 250) none repeat scroll 0% 0%; }
+.modal .modal-footer .modalFooterContainer .modalButtons { padding: 10px 10px 14px 224px; background: rgb(242, 242, 242) none repeat scroll 0% 0%; border-top: 1px solid rgb(221, 221, 221); }
+.modal .modal-footer .modalFooterContainer .modalButtons .btn { float: none; }
+.modal .modalFooterContainer.modalFooterContainerUser { padding-bottom: 0px; }
+.modal .modalHeaderContainer .close, .modal .homeDefaultPopUp .modalHeaderContainer .close { margin: -3px 5px 0px 0px; width: 21px; height: 20px; background: transparent url('popupsprite.png') no-repeat scroll 0px -17px; opacity: 1; }
+.modal .close:hover { opacity: 0.7; }
+.modal .close { margin-top: 0px; cursor: pointer; }
+.wrapperBg { background: transparent url('wrapper_bg.png') repeat-y scroll left top; }
+.accountDetails { width: auto; margin: 0px; padding: 0px; }
+.accountDetails li { float: left; list-style: outside none none; position: relative; }
+.accountDetails li > ul.dropdown-menu li { background: transparent none repeat scroll 0% 0%; }
+.headerContent ul.accountDetails a.userName { color: rgb(255, 255, 255); }
+.headerContent ul.accountDetails a.userName:hover { text-decoration: none; }
+.accountDetails li > ul.dropdown-menu li a, .accountDetails li > ul.dropdown-menu li a:hover { background: transparent none repeat scroll 0% 0%; }
+.searchTop a, .searchTop a:hover, .infoTop a, .infoTop a:hover, .messagesTop a, .messagesTop a:hover { width: 40px; height: 40px; display: block; background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -55px -105px; line-height: 40px; border-left: 1px solid rgb(45, 45, 45); text-decoration: none; }
+.searchTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -109px -105px; }
+.infoTop a { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -55px -896px; }
+.infoTop a.has-new-notification, .infoTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -109px -896px; }
+.messagesTop a { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -58px -855px; }
+.messagesTop a.has-new-friend-requests, .messagesTop a:hover { background: transparent url('beyazpanoinstructorsprite.png') no-repeat scroll -112px -855px; }
+.accountDetails li .dropdown-menu { width: 400px; top: 40px; border-top: 0px none; border-radius: 0px; box-shadow: none; background-clip: padding-box; }
+.accountDetails li.dropdown .dropdown-menu { width: 210px; right: 0px; left: auto; }
+.accountDetails li.messagesTop .dropdown-menu { left: -90px; }
+.accountDetails li.messagesTop .dropdown-menu a, .accountDetails li.messagesTop .dropdown-menu a:hover { border: medium none; }
+.accountDetails li.infoTop .dropdown-menu { left: -130px; }
+.accountDetails li.infoTop .dropdown-menu a, .accountDetails li.infoTop .dropdown-menu a:hover { border: medium none; }
+.accountDetails li.dropdown { float: left; right: 0px; }
+.accountDetails a.menu::after, .accountDetails .dropdown-toggle::after { border-top: 0px none; }
+.accountDetails .left img { float: left; margin-top: 7px; margin-right: 5px; }
+.userName { padding: 0px 5px; font-weight: bold; white-space: nowrap; line-height: 40px; text-align: left; display: inline-block; }
+.userName > span { display: inline-block; max-width: 107px; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; }
+.accountDetails li.dropdown a, .accountDetails li.dropdown a:hover { float: right; font-size: 12px; text-decoration: none; color: rgb(255, 255, 255); line-height: 40px; }
+.accountDetails li.dropdown .dropdownToggle, .accountDetails li.dropdown .dropdownToggle:hover { margin-top: 7px; background: rgb(57, 57, 57) url('beyazpanoinstructorsprite.png') no-repeat scroll -48px -972px; border: 1px solid rgb(15, 15, 15); line-height: 12px; width: 25px; height: 25px; }
+.accountDetails li.dropdown .dropdownToggle:hover { background: rgb(65, 65, 65) url('beyazpanoinstructorsprite.png') no-repeat scroll -48px -972px; }
+.accountDetails .messagesTop .dropdown-menu li, .accountDetails .messagesTop .dropdown-menu li:hover, .accountDetails .infoTop .dropdown-menu li, .accountDetails .infoTop .dropdown-menu li:hover { margin: 0px 10px; padding: 0px; display: block; float: none; }
+.accountDetails li.messagesTop .dropdown-menu li h3, .accountDetails li.infoTop .dropdown-menu li h3 { padding: 10px 0px 5px; margin: 0px; font-size: 13px; line-height: 13px; color: rgb(0, 27, 46); font-weight: bold; display: block; border-bottom: 1px solid rgb(199, 199, 199); }
+.accountDetails li.messagesTop .dropdown-menu li span, .accountDetails li.infoTop .dropdown-menu li span { padding: 8px 0px; display: block; font-size: 11px; color: rgb(0, 27, 46); text-align: left; }
+.accountDetails li.messagesTop .dropdown-menu li a, .accountDetails li.messagesTop .dropdown-menu li a:hover, .accountDetails li.infoTop .dropdown-menu li a, .accountDetails li.infoTop .dropdown-menu li a:hover { width: 100%; height: 22px; margin: 0px; padding: 2px 0px 3px; display: block; float: none; box-shadow: none; color: rgb(50, 124, 187); line-height: 22px; border-bottom: 1px solid rgb(207, 207, 207); }
+.accountDetails li.messagesTop .dropdown-menu li a:hover, .accountDetails li.infoTop .dropdown-menu li a:hover { background: rgb(239, 246, 250) none repeat scroll 0% 0%; }
+.accountDetails .searchTop .dropdown-menu li #navigationSearch { margin: 10px; }
+.accountDetails .searchTop .dropdown-menu li #navigationSearch input { width: 339px; height: 24px; padding: 0px 5px; line-height: 24px; font-size: 12px; border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(45, 45, 45) currentcolor rgb(45, 45, 45) rgb(45, 45, 45); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: none; float: right; }
+.accountDetails .searchTop .dropdown #navigationSearch a.searchTopButton, .accountDetails .searchTop .dropdown #navigationSearch a.searchTopButton:hover { width: 30px; height: 26px; line-height: 26px; margin: 0px; padding: 0px; display: block; float: right; background: rgb(255, 255, 255) url('beyazpanoinstructorsprite.png') no-repeat scroll -150px -176px; border: medium none; }
+li.messagesTop > a > span, li.infoTop > a > span, li.messagesTop > a:hover > span, li.infoTop > a:hover > span { visibility: hidden; text-decoration: none; }
+.leftSidebar, .leftWideSidebar { width: 179px; min-height: 1px; border-right: 1px solid rgb(207, 207, 207); }
+.middleBar, .middleWideBar { width: 534px; min-height: 500px; padding: 16px 10px; margin: 0px; position: relative; }
+.rightSidebar { width: 233px; margin-top: 5px; padding-left: 10px; }
+.userActions { margin-bottom: 10px; }
+.userMessageAttachment { min-height: 36px; }
+.userMessageAttachment li { min-width: 110px; float: left; margin: 0px; padding: 0px; line-height: 35px; }
+.userMessageAttachment li a, .userMessageAttachment li a:hover { padding-top: 2px; padding-bottom: 2px; padding-left: 30px; text-decoration: none; font-size: 13px; color: rgb(50, 124, 187); background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -580px -768px; }
+.userMessageAttachment .userAttachements, .userMessageAttachment .userAttachements:hover { padding-left: 30px; background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -580px -744px; }
+.userPostAttachements { margin-top: 2px; }
+.userMessageAttachment li > a.shareButton, .userMessageAttachment li > a.shareButton:hover { background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -579px -793px; }
+table#privacy_settings tr.privacyHeader td::after { border: medium none; }
+@media �screen {
+}
+.menu-dropdown, .dropdown-menu { background-color: rgb(255, 255, 255); float: left; display: none; position: absolute; top: 20px; left: 0px; z-index: 99999; min-width: 160px; max-width: 500px; margin-left: 0px; margin-right: 0px; padding: 0px; border-color: rgb(45, 45, 45); border-style: solid; border-width: 1px; border-radius: 0px; background-clip: padding-box; }
+.menu-dropdown li, .dropdown-menu li { float: none; display: block; background-color: rgb(255, 255, 255); position: relative; }
+.menu-dropdown .divider, .dropdown-menu .divider { height: 1px; margin: 5px 0px; overflow: hidden; background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(255, 255, 255); }
+.accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a, .accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a:hover, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { width: 50%; float: left; display: block; background: transparent none repeat scroll 0% 0%; border: 0px none; clear: none; color: rgb(154, 159, 168); font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { width: 100%; }
+.accountDetails li.messagesTop .dropdown-menu li.dropdownMenuFooter a:hover, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li.dropdownMenuFooter > a.connections:hover { color: rgb(50, 124, 187); text-decoration: underline; }
+#notifications-dropdown .dropdown-menu li span { padding: 4px 0px; margin-bottom: 5px; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li a, .accountDetails li.messagesTop ul.dropdown-menu > li a, .accountDetails li.messagesTop ul.dropdown-menu > li a:hover, .accountDetails li.messagesTop .dropdown-menu li.userRequest a:hover { line-height: 15px; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a, .accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a:hover, .accountDetails li.messagesTop ul.dropdown-menu li a, .accountDetails li.messagesTop ul.dropdown-menu li a:hover { border-bottom: 0px none; display: inline; background: transparent none repeat scroll 0% 0%; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a { font-size: 100%; font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a:hover { text-decoration: underline; font-weight: normal; }
+.accountDetails li.infoTop ul.dropdown-menu.notificationsDropdown > li > a.connections { margin-top: 2px; margin-bottom: 2px; }
+.accountDetails li.infoTop .dropdown-menu.notificationsDropdown li span { margin: 0px 5px; display: inline; }
+#notifications-dropdown .dropdown-menu li.notifListEmpty { padding-top: 7px; padding-bottom: 7px; }
+#notifications-dropdown .dropdown-menu li.notifListEmpty span { margin-left: 0px; }
+#upload_list *, .userPostAttachements *, .profileInfo h2, .profileInfo > li > div, .description_assignment, .dropboxStudContainer p, .dropboxDownloadContainer * { overflow-wrap: break-word; }
+.btn.primary { color: rgb(255, 255, 255); background-color: rgb(59, 89, 152); background-repeat: repeat-x; background-image: -moz-linear-gradient(center top , rgb(96, 120, 172), rgb(60, 90, 152)); border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+.btn.userPostButton:hover, .btn.userDefaultBtn:hover, .ui-datepicker-close:hover, .switchCourseButton .open .userDefaultBtn { background: rgb(2, 197, 248) url('beyazpanobuttonssprite.png') no-repeat scroll -6px -781px; color: rgb(255, 255, 255); border-color: rgb(52, 109, 132); outline: medium none; }
+#requests-dropdown .dropdown-menu { max-height: 500px; overflow-y: auto; }
+@media not all {
+}
+#pageLogo a, #pageLogo a:hover { height: 29px; width: 170px; margin: 6px 0px 0px; display: block; background-image: url('beyazpanoinstructorsprite.png'); background-position: 0px -1010px; background-repeat: no-repeat; text-decoration: none; }
+#pageLogo a span, #pageLogo a:hover span { color: rgb(45, 45, 45); visibility: hidden; text-decoration: none; }
+.pageHeader { height: 40px; position: fixed; top: 0px; left: 0px; right: 0px; z-index: 10000; overflow: visible; background-color: rgb(45, 45, 45); }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, a, b, i, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0px; padding: 0px; border: 0px none; outline: medium none !important; vertical-align: baseline; background: transparent none repeat scroll 0% 0%; font-family: arial,tahoma,verdana,sans-serif; }
+body { line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+nav ul { list-style: outside none none; }
+ul, ol { margin: 0px; padding: 0px; list-style: outside none none; }
+blockquote::before, blockquote::after, q::before, q::after { content: none; }
+a { margin: 0px; padding: 0px; font-size: 100%; vertical-align: baseline; background: transparent none repeat scroll 0% 0%; }
+input, select { vertical-align: middle; }
+.ui-helper-clearfix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+input, textarea { transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset; }
+input:focus, textarea:focus { outline: 0px none; border-color: rgba(82, 168, 236, 0.8); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset, 0px 0px 8px rgba(82, 168, 236, 0.6); }
+input[type="file"]:focus, input[type="checkbox"]:focus, select:focus { box-shadow: none; outline: 1px dotted rgb(102, 102, 102); }
+input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input { display: inline-block; padding: 4px; font-size: 13px; line-height: 18px; color: rgb(128, 128, 128); border: 1px solid rgb(204, 204, 204); border-radius: 0px; }
+.ui-dialog-buttonset .ui-button:nth-child(2) { cursor: pointer; display: inline-block; background-color: rgb(230, 230, 230); background-repeat: no-repeat; background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255) 25%, rgb(230, 230, 230)); padding: 5px 14px 6px; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); color: rgb(51, 51, 51); font-size: 13px; line-height: normal; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 4px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); transition: all 0.1s linear 0s; overflow: visible; }
+#colorbox, #cboxOverlay, #cboxWrapper { position: absolute; top: 0px; left: 0px; z-index: 9999; overflow: hidden; }
+#cboxOverlay { position: fixed; width: 100%; height: 100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+#cboxLoadedContent { overflow: auto; }
+#cboxTitle { margin: 0px; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+#colorbox, #cboxContent, #cboxLoadedContent { box-sizing: content-box; }
+#cboxOverlay { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#colorbox {  }
+#cboxContent { margin-top: 32px; overflow: visible; }
+#cboxLoadedContent { background: rgb(0, 0, 0) none repeat scroll 0% 0%; padding: 1px; }
+#cboxTitle { position: absolute; color: rgb(0, 0, 0); }
+#cboxCurrent { position: absolute; top: -22px; right: 205px; text-indent: -9999px; }
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose { text-indent: -9999px; width: 20px; height: 20px; position: absolute; top: -20px; background: transparent url('controls.png') no-repeat scroll 0px 0px; }
+#cboxPrevious { background-position: 0px 0px; right: 44px; }
+#cboxPrevious:hover { background-position: 0px -25px; }
+#cboxNext { background-position: -25px 0px; right: 22px; }
+#cboxNext:hover { background-position: -25px -25px; }
+#cboxClose { background-position: -50px 0px; right: 0px; }
+#cboxClose:hover { background-position: -50px -25px; }
+/* ::::: https://www.beyazpano.com/css/main_2.build.css ::::: */
+
+ul.token-input-list-facebook { width: 400px; margin: 9px -1px 0px 0px; padding: 0px; overflow: hidden; height: auto !important; border: 1px solid rgb(199, 199, 199); cursor: text; font-size: 12px; color: rgb(45, 45, 45); min-height: 1px; z-index: 999; background-color: rgb(255, 255, 255); list-style-type: none; float: left; }
+ul.token-input-list-facebook li input { border: 0px none; width: 100px; padding: 3px 8px; background-color: white; margin: 2px 0px; box-shadow: none; }
+li.token-input-input-token-facebook { float: left; margin: 0px; padding: 0px; list-style-type: none; }
+div.token-input-dropdown-facebook { position: absolute; width: auto; background-color: rgb(255, 255, 255); overflow: hidden; border-left: 1px solid rgb(204, 204, 204); border-right: 1px solid rgb(204, 204, 204); border-bottom: 1px solid rgb(204, 204, 204); cursor: default; font-size: 11px; font-family: Verdana; z-index: 99999; }
+.token-input-input-token-facebook { height: 24px; line-height: 24px; }
+.token-input-input-token-facebook input { height: 12px; }
+#addUsersToConversation, #post-new-message, #messages_view_more_link, #createConversation, #content_left_view_more_link { background: transparent url('beyazpanobuttonssprite.png') no-repeat scroll -6px -745px; border: 1px solid rgb(208, 115, 0); color: rgb(0, 0, 0); font-size: 12px; box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05); margin: 9px 9px 9px 0px; height: 28px; }
+#addUsersToConversation:hover, #post-new-message:hover, #messages_view_more_link:hover, #createConversation:hover, #content_left_view_more_link:hover { background-position: -6px -781px; border-color: rgb(52, 109, 132); color: rgb(255, 255, 255); }
+#post-new-message, #createConversation { position: relative; bottom: 70px; right: 0px; }
+#postNewMessage #replyMessage, .convMessage #convMsg { height: 95px; max-height: 95px; }
+#newMessageForm, #createConversationForm { position: relative; }
+.messageItem { margin-bottom: 25px; }
+#newMessageForm .btn img, #addUsersToConversation img, #createConversation img { width: 10px; }
+.convMessage #convMsg, .convSubj #subject { width: 391px; }
+.convSubj #subject { min-height: 17px; }
+.convParticipants span, .convSubj span, .convMessage span { color: rgb(45, 45, 45); font-weight: bold; text-transform: capitalize; margin-top: 9px; width: 132px; }
+.convParticipants span { margin-top: 17px; }
+#createConversationForm { border-top: 1px solid rgb(207, 207, 207); padding-top: 10px; }
+.create_conv { border-bottom: 1px solid rgb(207, 207, 207); background-position: 4px -473px; background-image: url('beyazpanocontentsmallbuttons.png'); background-repeat: no-repeat; color: rgb(0, 0, 0); display: block; font-size: 12px; font-weight: bold; line-height: 27px; padding: 0px 10px 0px 28px; text-decoration: none; margin-top: 17px; }
+.create_conv:hover { background-color: rgb(214, 234, 245); text-decoration: none; color: rgb(0, 0, 0); }
+.noResultMsg { display: block; margin-top: 10px; }
+#conversationsContent ul li .noResultMsg { display: none; }
+#conversationsContent ul:first-child li .noResultMsg { display: block; }
+#convMsg, #replyMessage { resize: vertical !important; }
+.messageItem, #messagesHeader, #postNewMessage, #participantsList, #newConversationTitle, #createConversationForm { display: none; }
+#newMessageForm #attachments, #createConversationForm #attachments { min-height: 50px; }
+#vakata-contextmenu { display: block; visibility: hidden; left: 0px; top: -200px; position: absolute; margin: 0px; padding: 0px; min-width: 180px; background: rgb(235, 235, 235) none repeat scroll 0% 0%; border: 1px solid silver; z-index: 10000; }
+#jstree-marker { padding: 0px; margin: 0px; font-size: 12px; overflow: hidden; height: 12px; width: 8px; position: absolute; top: -30px; z-index: 10001; background-repeat: no-repeat; display: none; background-color: transparent; text-shadow: 1px 1px 1px white; color: black; line-height: 10px; }
+#jstree-marker-line { padding: 0px; margin: 0px; line-height: 0%; font-size: 1px; overflow: hidden; height: 1px; width: 100px; position: absolute; top: -30px; z-index: 10000; background-repeat: no-repeat; display: none; background-color: rgb(69, 108, 67); cursor: pointer; border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgb(238, 238, 238) rgb(238, 238, 238) rgb(238, 238, 238) currentcolor; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 0px 2px rgb(102, 102, 102); border-radius: 1px; }
